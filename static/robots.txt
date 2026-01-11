@@ -1,3 +1,11 @@
-# allow crawling everything by default
+# Robots.txt for KUIRA Festival de Cine Fronterizo
+# https://kuirafestival.com
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://kuirafestival.com/sitemap.xml
+
+# Crawl-delay for bots that respect it
+Crawl-delay: 1
