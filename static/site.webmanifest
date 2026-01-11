@@ -1,0 +1,30 @@
+{
+  "name": "KUIRA - Festival de Cine Fronterizo",
+  "short_name": "KUIRA",
+  "description": "Festival de cine fronterizo en Ciudad Juárez, Chihuahua. Primera edición abril 2026.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F0",
+  "theme_color": "#E86C34",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["entertainment", "events"],
+  "lang": "es-MX"
+}

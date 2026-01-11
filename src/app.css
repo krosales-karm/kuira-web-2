@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+/* ============================================
+   KUIRA - FESTIVAL DE CINE FRONTERIZO
+   Sistema de diseño basado en manual de identidad
+   ============================================ */
+
+/* ============================================
+   PALETA DE COLORES KUIRA
+   ============================================ */
+@theme {
+  /* Colores principales */
+  --color-kuira-azul: #284565;
+  --color-kuira-naranja: #d18730;
+  --color-kuira-terracota: #bb5027;
+  --color-kuira-mostaza: #7c7936;
+  --color-kuira-rosa: #ff9498;
+  --color-kuira-oro: #ffbd59;
+
+  /* Variaciones */
+  --color-kuira-cream: #fdf8f3;
+  --color-kuira-dark: #1a1a1a;
+
+  /* Tipografías */
+  --font-gotham: "Gotham", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  --font-dm-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-lonely: "Courier Prime", "Courier New", Courier, monospace;
+}
+
+/* ============================================
+   ESTILOS BASE
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-dm-sans);
+  background-color: var(--color-kuira-cream);
+  color: var(--color-kuira-dark);
+  line-height: 1.6;
+}
+
+/* Headings con Gotham */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-gotham);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ============================================
+   UTILIDADES PERSONALIZADAS
+   ============================================ */
+.font-gotham {
+  font-family: var(--font-gotham);
+}
+
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
+}
+
+.font-lonely {
+  font-family: var(--font-lonely);
+}
+
+/* Colores de fondo */
+.bg-kuira-azul { background-color: var(--color-kuira-azul); }
+.bg-kuira-naranja { background-color: var(--color-kuira-naranja); }
+.bg-kuira-terracota { background-color: var(--color-kuira-terracota); }
+.bg-kuira-mostaza { background-color: var(--color-kuira-mostaza); }
+.bg-kuira-rosa { background-color: var(--color-kuira-rosa); }
+.bg-kuira-oro { background-color: var(--color-kuira-oro); }
+.bg-kuira-cream { background-color: var(--color-kuira-cream); }
+.bg-kuira-dark { background-color: var(--color-kuira-dark); }
+
+/* Colores de texto */
+.text-kuira-azul { color: var(--color-kuira-azul); }
+.text-kuira-naranja { color: var(--color-kuira-naranja); }
+.text-kuira-terracota { color: var(--color-kuira-terracota); }
+.text-kuira-mostaza { color: var(--color-kuira-mostaza); }
+.text-kuira-rosa { color: var(--color-kuira-rosa); }
+.text-kuira-oro { color: var(--color-kuira-oro); }
+.text-kuira-cream { color: var(--color-kuira-cream); }
+.text-kuira-dark { color: var(--color-kuira-dark); }
+
+/* Bordes */
+.border-kuira-azul { border-color: var(--color-kuira-azul); }
+.border-kuira-naranja { border-color: var(--color-kuira-naranja); }
+.border-kuira-terracota { border-color: var(--color-kuira-terracota); }
+
+/* ============================================
+   COMPONENTES
+   ============================================ */
+
+/* Botón primario */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-kuira-azul);
+  color: white;
+  font-family: var(--font-gotham);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-kuira-terracota);
+  transform: translateY(-2px);
+}
+
+/* Botón secundario */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: var(--color-kuira-azul);
+  font-family: var(--font-gotham);
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--color-kuira-azul);
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-kuira-azul);
+  color: white;
+}
+
+/* Container */
+.container-kuira {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-kuira {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Sección */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* Card de eje temático */
+.eje-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(40, 69, 101, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eje-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(40, 69, 101, 0.15);
+}
+
+/* Animaciones */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Patrón de fondo decorativo */
+.pattern-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d18730' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
