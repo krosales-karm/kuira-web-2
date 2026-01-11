@@ -37,4 +37,4 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 # kuira-web-2
- test 123414
+ test 1234141231
